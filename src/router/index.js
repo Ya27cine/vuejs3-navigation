@@ -1,13 +1,20 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
-import "bootswatch/dist/journal/bootstrap.min.css";
+import Blog from '../views/blog'
+
+import "bootswatch/dist/sandstone/bootstrap.min.css";
 
 const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/blog',
+    name: 'Blog',
+    component: Blog
   },
   {
     path: '/about',
