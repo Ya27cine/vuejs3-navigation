@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Blog from '../views/blog'
+import Show from '../views/blog/Show'
+
 
 import "bootswatch/dist/sandstone/bootstrap.min.css";
 
@@ -20,6 +22,11 @@ const routes = [
     path: '/about',
     name: 'About',
     component: About
+  },
+  {
+    path: '/blog/:id',
+    name: 'Show',
+    component: Show
   }
 ]
 
