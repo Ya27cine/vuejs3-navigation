@@ -24,8 +24,8 @@ const routes = [
     component: About
   },
   {
-    path: '/blog/:id',
-    name: 'Show',
+    path: '/blog/:id/:slug',
+    name: 'post-show',
     component: Show
   }
 ]

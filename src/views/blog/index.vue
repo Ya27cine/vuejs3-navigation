@@ -18,7 +18,11 @@
 
     <div class="row">
         <div class="col-md-4" v-for="post in posts">
-            <h2>{{ post.title}}</h2>
+            <h2>
+                <router-link :to="{name: 'post-show', params: {id: post.id, slug: post.slug} }">
+                    {{ post.title}}
+                </router-link>
+                </h2>
             <p class="lead text-start">{{ post.content}}</p>
         </div>
     </div> 
