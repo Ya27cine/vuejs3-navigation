@@ -29,9 +29,27 @@
   </div>
 </nav>
 
+  <div class="my-3">
+      <button @click="previous" class="btn btn-danger">Previous</button>
+      <button @click="redirect" class="btn btn-success">Redirect</button>
+      <button @click="next" class="btn btn-info">Next</button>
+  </div>
+
 </template>
 <script>
 export default {
+  methods: {
+    previous(){
+      this.$router.go(-1);
+    },
+    redirect(){
+      this.$router.push('/');
+    },
+    next(){
+      this.$router.go(1);
+    }
+
+  },
     
 }
 </script>
