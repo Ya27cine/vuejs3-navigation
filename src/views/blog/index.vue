@@ -34,8 +34,13 @@ export default {
 
     data() {
         return {
-            
+            posts: []
         }
+    },
+    mounted() {
+        fetch("http://localhost:5000/posts").then( r => r.json() )
+            .then( data => this.posts = data)
+            .catch( err => console.log(err))
     },
     
 }
