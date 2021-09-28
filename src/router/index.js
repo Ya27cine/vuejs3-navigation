@@ -26,7 +26,8 @@ const routes = [
   {
     path: '/blog/:id/:slug',
     name: 'post-show',
-    component: Show
+    component: Show,
+    props: true
   }
 ]
 

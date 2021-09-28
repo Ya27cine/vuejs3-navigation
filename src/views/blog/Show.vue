@@ -2,6 +2,7 @@
 
 
     <h1> Show Post ID : {{ id }}</h1>
+    <h2> Slug : {{ slug }}</h2>
 
     <p class="lead"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, eligendi ea? Quas porro saepe suscipit aliquid fugiat ab exercitationem officia voluptatibus inventore vel! Expedita consequatur sint autem dicta, modi ab?
     Obcaecati culpa quasi quo itaque? Fugit beatae dolor laudantium id fuga cum, nostrum nemo ipsum quod alias ratione, ullam, ducimus aperiam ut error iure excepturi aliquam fugiat obcaecati dolorem minus?
@@ -13,13 +14,7 @@
 </template>
 <script>
 export default {
-
-    data() {
-        return {
-            id: this.$route.params.id
-        }
-    },
-    
+    props: ['id', 'slug']    
 }
 </script>
 <style lang="">
