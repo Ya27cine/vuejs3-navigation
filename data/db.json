@@ -1,0 +1,29 @@
+{
+    "posts":[
+        {
+            "id": 1,
+            "title": "Formation Laravel",
+            "slug": "Formation-Laravel",
+            "content": "ectetur nobis eos et, dignissimos temporibus aliquam nihil deserunt blanditiis. D"
+        },
+        {
+            "id": 2,
+            "title": "Formation Spring Boot",
+            "slug": "Formation-Spring-Boot",
+            "content": "ectetur nobis eos et, dignissimos temporibus aliquam nihil deserunt blanditiis. D"
+        },
+        {
+            "id": 3,
+            "title": "Formation Symfony 4",
+            "slug": "Formation-Symfony",
+            "content": "ectetur nobis eos et, dignissimos temporibus aliquam nihil deserunt blanditiis. D"
+        },
+        {
+            "id": 4,
+            "title": "Formation ReactJs",
+            "slug": "Formation-ReactJs",
+            "content": "ectetur nobis eos et, dignissimos temporibus aliquam nihil deserunt blanditiis. D"
+        }
+    ],
+    "users":[]
+}

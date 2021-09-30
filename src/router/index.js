@@ -3,7 +3,7 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Blog from '../views/blog'
 import Show from '../views/blog/Show'
-import PageNotFound from '../views/blog/pageNotFound'
+import PageNotFound from '../views/pageNotFound'
 
 
 

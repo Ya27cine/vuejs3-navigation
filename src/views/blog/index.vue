@@ -34,33 +34,13 @@ export default {
 
     data() {
         return {
-            posts:[
-                {
-                    id: 1,
-                    title: 'Formation Laravel',
-                    slug: 'Formation-Laravel',
-                    content: "ectetur nobis eos et, dignissimos temporibus aliquam nihil deserunt blanditiis. D"
-                },
-                {
-                    id: 2,
-                    title: 'Formation Spring Boot',
-                    slug: 'Formation-Spring-Boot',
-                    content: "ectetur nobis eos et, dignissimos temporibus aliquam nihil deserunt blanditiis. D"
-                },
-                {
-                    id: 3,
-                    title: 'Formation Symfony',
-                    slug: 'Formation-Symfony',
-                    content: "ectetur nobis eos et, dignissimos temporibus aliquam nihil deserunt blanditiis. D"
-                },
-                {
-                    id: 4,
-                    title: 'Formation ReactJs',
-                    slug: 'Formation-ReactJs',
-                    content: "ectetur nobis eos et, dignissimos temporibus aliquam nihil deserunt blanditiis. D"
-                }
-            ]
+            posts: []
         }
+    },
+    mounted() {
+        fetch("http://localhost:3000/posts").then( r => r.json() )
+            .then( data => this.posts = data)
+            .catch( err => console.log(err))
     },
     
 }
