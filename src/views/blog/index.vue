@@ -38,7 +38,7 @@ export default {
         }
     },
     mounted() {
-        fetch("http://localhost:5000/posts").then( r => r.json() )
+        fetch("http://localhost:3000/posts").then( r => r.json() )
             .then( data => this.posts = data)
             .catch( err => console.log(err))
     },
