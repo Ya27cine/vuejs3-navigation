@@ -19,11 +19,9 @@ export default {
         }
     },
     mounted() {
-        setTimeout( () => {
              fetch("http://localhost:3000/posts/"+this.id).then( r => r.json() )
             .then( data => this.post = data)
             .catch( err => console.log(err))
-        }, 1000)
            
     },    
 }
