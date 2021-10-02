@@ -3,6 +3,8 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Blog from '../views/blog'
 import Show from '../views/blog/Show'
+import Create from '../views/blog/Create'
+
 import PageNotFound from '../views/pageNotFound'
 
 
@@ -34,6 +36,10 @@ const routes = [
   {
     path: '/posts',
     redirect: '/blog'
+  },
+  {
+    path: '/new',
+    component: Create
   },
   {
     path: '/:catchAll(.*)',

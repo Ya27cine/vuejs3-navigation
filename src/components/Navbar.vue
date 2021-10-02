@@ -30,8 +30,8 @@
 </nav>
 
   <div class="my-3">
-      <button @click="previous" class="btn btn-danger">Previous</button>
-      <button @click="redirect" class="btn btn-success">Redirect</button>
+      <button @click="previous" class="btn btn-danger mx-2">Previous</button>
+      <button @click="redirect" class="btn btn-success mx-2">Redirect</button>
       <button @click="next" class="btn btn-info">Next</button>
   </div>
 
