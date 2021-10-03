@@ -25,9 +25,24 @@ export default {
         }
     },
     methods: {
+        toSlug(title){
+            return title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
+        },
         createPost(){
             console.log("create post");
-            console.log("---"+this.title+" / "+this.content);
+
+            let post = {
+                title:   this.title,
+                slug: this.toSlug(this.title),
+                content: this.content
+            }
+
+            fetch("http://localhost:3000/posts/",{
+                 method: 'POST',
+                 headers: { 'Content-Type': 'application/json'},
+                 body: JSON.stringify(post) 
+             }).then( () => console.log('Success'))
+               .catch( err => console.log(err))
 
         }
     },
